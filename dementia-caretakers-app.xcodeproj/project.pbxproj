@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73F740C32622BA7700F696FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F740C22622BA7700F696FF /* AppDelegate.swift */; };
+		73F740C52622BA7700F696FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F740C42622BA7700F696FF /* SceneDelegate.swift */; };
+		73F740C72622BA7700F696FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F740C62622BA7700F696FF /* ViewController.swift */; };
+		73F740CA2622BA7700F696FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F740C82622BA7700F696FF /* Main.storyboard */; };
+		73F740CC2622BA7C00F696FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F740CB2622BA7C00F696FF /* Assets.xcassets */; };
+		73F740CF2622BA7C00F696FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F740CD2622BA7C00F696FF /* LaunchScreen.storyboard */; };
+		73F740DA2622BA7D00F696FF /* dementia_caretakers_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F740D92622BA7D00F696FF /* dementia_caretakers_appTests.swift */; };
+		73F740E52622BA7D00F696FF /* dementia_caretakers_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F740E42622BA7D00F696FF /* dementia_caretakers_appUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73F740D62622BA7D00F696FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73F740B72622BA7700F696FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F740BE2622BA7700F696FF;
+			remoteInfo = "dementia-caretakers-app";
+		};
+		73F740E12622BA7D00F696FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73F740B72622BA7700F696FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F740BE2622BA7700F696FF;
+			remoteInfo = "dementia-caretakers-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73F740BF2622BA7700F696FF /* dementia-caretakers-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dementia-caretakers-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F740C22622BA7700F696FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73F740C42622BA7700F696FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		73F740C62622BA7700F696FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73F740C92622BA7700F696FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73F740CB2622BA7C00F696FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73F740CE2622BA7C00F696FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73F740D02622BA7C00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F740D52622BA7D00F696FF /* dementia-caretakers-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dementia-caretakers-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F740D92622BA7D00F696FF /* dementia_caretakers_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dementia_caretakers_appTests.swift; sourceTree = "<group>"; };
+		73F740DB2622BA7D00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F740E02622BA7D00F696FF /* dementia-caretakers-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dementia-caretakers-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F740E42622BA7D00F696FF /* dementia_caretakers_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dementia_caretakers_appUITests.swift; sourceTree = "<group>"; };
+		73F740E62622BA7D00F696FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73F740BC2622BA7700F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740D22622BA7D00F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740DD2622BA7D00F696FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73F740B62622BA7700F696FF = {
+			isa = PBXGroup;
+			children = (
+				73F740C12622BA7700F696FF /* dementia-caretakers-app */,
+				73F740D82622BA7D00F696FF /* dementia-caretakers-appTests */,
+				73F740E32622BA7D00F696FF /* dementia-caretakers-appUITests */,
+				73F740C02622BA7700F696FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73F740C02622BA7700F696FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73F740BF2622BA7700F696FF /* dementia-caretakers-app.app */,
+				73F740D52622BA7D00F696FF /* dementia-caretakers-appTests.xctest */,
+				73F740E02622BA7D00F696FF /* dementia-caretakers-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73F740C12622BA7700F696FF /* dementia-caretakers-app */ = {
+			isa = PBXGroup;
+			children = (
+				73F740C22622BA7700F696FF /* AppDelegate.swift */,
+				73F740C42622BA7700F696FF /* SceneDelegate.swift */,
+				73F740C62622BA7700F696FF /* ViewController.swift */,
+				73F740C82622BA7700F696FF /* Main.storyboard */,
+				73F740CB2622BA7C00F696FF /* Assets.xcassets */,
+				73F740CD2622BA7C00F696FF /* LaunchScreen.storyboard */,
+				73F740D02622BA7C00F696FF /* Info.plist */,
+			);
+			path = "dementia-caretakers-app";
+			sourceTree = "<group>";
+		};
+		73F740D82622BA7D00F696FF /* dementia-caretakers-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				73F740D92622BA7D00F696FF /* dementia_caretakers_appTests.swift */,
+				73F740DB2622BA7D00F696FF /* Info.plist */,
+			);
+			path = "dementia-caretakers-appTests";
+			sourceTree = "<group>";
+		};
+		73F740E32622BA7D00F696FF /* dementia-caretakers-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				73F740E42622BA7D00F696FF /* dementia_caretakers_appUITests.swift */,
+				73F740E62622BA7D00F696FF /* Info.plist */,
+			);
+			path = "dementia-caretakers-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73F740BE2622BA7700F696FF /* dementia-caretakers-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F740E92622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-app" */;
+			buildPhases = (
+				73F740BB2622BA7700F696FF /* Sources */,
+				73F740BC2622BA7700F696FF /* Frameworks */,
+				73F740BD2622BA7700F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dementia-caretakers-app";
+			productName = "dementia-caretakers-app";
+			productReference = 73F740BF2622BA7700F696FF /* dementia-caretakers-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73F740D42622BA7D00F696FF /* dementia-caretakers-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F740EC2622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-appTests" */;
+			buildPhases = (
+				73F740D12622BA7D00F696FF /* Sources */,
+				73F740D22622BA7D00F696FF /* Frameworks */,
+				73F740D32622BA7D00F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73F740D72622BA7D00F696FF /* PBXTargetDependency */,
+			);
+			name = "dementia-caretakers-appTests";
+			productName = "dementia-caretakers-appTests";
+			productReference = 73F740D52622BA7D00F696FF /* dementia-caretakers-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73F740DF2622BA7D00F696FF /* dementia-caretakers-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F740EF2622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-appUITests" */;
+			buildPhases = (
+				73F740DC2622BA7D00F696FF /* Sources */,
+				73F740DD2622BA7D00F696FF /* Frameworks */,
+				73F740DE2622BA7D00F696FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73F740E22622BA7D00F696FF /* PBXTargetDependency */,
+			);
+			name = "dementia-caretakers-appUITests";
+			productName = "dementia-caretakers-appUITests";
+			productReference = 73F740E02622BA7D00F696FF /* dementia-caretakers-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73F740B72622BA7700F696FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					73F740BE2622BA7700F696FF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					73F740D42622BA7D00F696FF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 73F740BE2622BA7700F696FF;
+					};
+					73F740DF2622BA7D00F696FF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 73F740BE2622BA7700F696FF;
+					};
+				};
+			};
+			buildConfigurationList = 73F740BA2622BA7700F696FF /* Build configuration list for PBXProject "dementia-caretakers-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73F740B62622BA7700F696FF;
+			productRefGroup = 73F740C02622BA7700F696FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F740BE2622BA7700F696FF /* dementia-caretakers-app */,
+				73F740D42622BA7D00F696FF /* dementia-caretakers-appTests */,
+				73F740DF2622BA7D00F696FF /* dementia-caretakers-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73F740BD2622BA7700F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F740CF2622BA7C00F696FF /* LaunchScreen.storyboard in Resources */,
+				73F740CC2622BA7C00F696FF /* Assets.xcassets in Resources */,
+				73F740CA2622BA7700F696FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740D32622BA7D00F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740DE2622BA7D00F696FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73F740BB2622BA7700F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F740C72622BA7700F696FF /* ViewController.swift in Sources */,
+				73F740C32622BA7700F696FF /* AppDelegate.swift in Sources */,
+				73F740C52622BA7700F696FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740D12622BA7D00F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F740DA2622BA7D00F696FF /* dementia_caretakers_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F740DC2622BA7D00F696FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F740E52622BA7D00F696FF /* dementia_caretakers_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73F740D72622BA7D00F696FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73F740BE2622BA7700F696FF /* dementia-caretakers-app */;
+			targetProxy = 73F740D62622BA7D00F696FF /* PBXContainerItemProxy */;
+		};
+		73F740E22622BA7D00F696FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73F740BE2622BA7700F696FF /* dementia-caretakers-app */;
+			targetProxy = 73F740E12622BA7D00F696FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73F740C82622BA7700F696FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73F740C92622BA7700F696FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73F740CD2622BA7C00F696FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73F740CE2622BA7C00F696FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73F740E72622BA7D00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73F740E82622BA7D00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73F740EA2622BA7D00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73F740EB2622BA7D00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73F740ED2622BA7D00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dementia-caretakers-app.app/dementia-caretakers-app";
+			};
+			name = Debug;
+		};
+		73F740EE2622BA7D00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dementia-caretakers-app.app/dementia-caretakers-app";
+			};
+			name = Release;
+		};
+		73F740F02622BA7D00F696FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dementia-caretakers-app";
+			};
+			name = Debug;
+		};
+		73F740F12622BA7D00F696FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN8DUP74SK;
+				INFOPLIST_FILE = "dementia-caretakers-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "For-Ageing-Hackathon.dementia-caretakers-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dementia-caretakers-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73F740BA2622BA7700F696FF /* Build configuration list for PBXProject "dementia-caretakers-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F740E72622BA7D00F696FF /* Debug */,
+				73F740E82622BA7D00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F740E92622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F740EA2622BA7D00F696FF /* Debug */,
+				73F740EB2622BA7D00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F740EC2622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F740ED2622BA7D00F696FF /* Debug */,
+				73F740EE2622BA7D00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F740EF2622BA7D00F696FF /* Build configuration list for PBXNativeTarget "dementia-caretakers-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F740F02622BA7D00F696FF /* Debug */,
+				73F740F12622BA7D00F696FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73F740B72622BA7700F696FF /* Project object */;
+}
