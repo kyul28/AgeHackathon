@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController, FSCalendarDelegate {
     
     @IBOutlet var calendar: FSCalendar!
+    @IBOutlet var label: UILabel!
+    @IBOutlet var slider: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +28,10 @@ class ViewController: UIViewController, FSCalendarDelegate {
     
    
     @IBAction func menuDidChange(_ sender: UISegmentedControl) {
-        switch sender.selectedSegmentIndex {
+        switch sender.selectedSegmentIndex{
         case 0:
-            print("hello there")
+            slider.accessibilityActivate()
+            _ = slider.isEnabled;
         case 1:
             print("hello")
         
@@ -39,6 +42,13 @@ class ViewController: UIViewController, FSCalendarDelegate {
         }
         
     }
+    
+    @IBAction func sliderDidSlide(_ sender: UISlider) {
+        let value = sender.value
+        label.text = "\(value)"
+    }
+    
+    
     
 
 }
