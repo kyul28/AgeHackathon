@@ -45,15 +45,17 @@ class ViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet var labelForMemoryLoss: UILabel!
     @IBOutlet var labelForConfusion: UILabel!
     @IBOutlet var labelForMoodSwings: UILabel!
-    @IBOutlet var labelForWandering: UILabel!
-    @IBOutlet var labelForSuspicion: UILabel!
-    @IBOutlet var labelForDelusions: UILabel!
+//    @IBOutlet var labelForWandering: UILabel!
+//    @IBOutlet var labelForSuspicion: UILabel!
+//    @IBOutlet var labelForDelusions: UILabel!
     //Habits Buttons
     @IBOutlet var checkboxDepression: UIButton!
     @IBOutlet var checkboxAgression: UIButton!
     @IBOutlet var checkboxAnxiety: UIButton!
     @IBOutlet var checkboxMemoryLoss: UIButton!
     @IBOutlet var checkboxConfusion: UIButton!
+    @IBOutlet var checkboxMoodSwings: UIButton!
+
 
 
     //Loads ViewController
@@ -212,18 +214,6 @@ class ViewController: UIViewController, FSCalendarDelegate {
         //Habits Depression
         labelForDepression.isEnabled = true;
         labelForDepression.alpha = 1;
-        checkboxDepression.isEnabled = true;
-        checkboxDepression.alpha = 1;
-        checkboxAgression.isEnabled = true;
-        checkboxAgression.alpha = 1;
-        
-        checkboxAnxiety.isEnabled = true;
-        checkboxAnxiety.alpha = 1;
-        checkboxMemoryLoss.isEnabled = true;
-        checkboxMemoryLoss.alpha = 1;
-        checkboxConfusion.isEnabled = true;
-        checkboxConfusion.alpha = 1;
-        
         //Habits Agression
         labelForAgression.isEnabled = true;
         labelForAgression.alpha = 1;
@@ -240,14 +230,29 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForMoodSwings.isEnabled = true;
         labelForMoodSwings.alpha = 1;
         //Habits Wandering
-        labelForWandering.isEnabled = true;
-        labelForWandering.alpha = 1;
-        //Habits Suspicion
-        labelForSuspicion.isEnabled = true;
-        labelForSuspicion.alpha = 1;
-        //Habits Delusions
-        labelForDelusions.isEnabled = true;
-        labelForDelusions.alpha = 1;
+//        labelForWandering.isEnabled = true;
+//        labelForWandering.alpha = 1;
+//        //Habits Suspicion
+//        labelForSuspicion.isEnabled = true;
+//        labelForSuspicion.alpha = 1;
+//        //Habits Delusions
+//        labelForDelusions.isEnabled = true;
+//        labelForDelusions.alpha = 1;
+        
+        //Checkboxes
+        checkboxDepression.isEnabled = true;
+        checkboxDepression.alpha = 1;
+        checkboxAgression.isEnabled = true;
+        checkboxAgression.alpha = 1;
+        checkboxAnxiety.isEnabled = true;
+        checkboxAnxiety.alpha = 1;
+        checkboxMemoryLoss.isEnabled = true;
+        checkboxMemoryLoss.alpha = 1;
+        checkboxConfusion.isEnabled = true;
+        checkboxConfusion.alpha = 1;
+        checkboxMoodSwings.isEnabled = true;
+        checkboxMoodSwings.alpha = 1;
+        
     }
     
     //Disables the Habits Page
@@ -258,17 +263,6 @@ class ViewController: UIViewController, FSCalendarDelegate {
         //Habits Depression
         labelForDepression.isEnabled = false;
         labelForDepression.alpha = 0;
-        checkboxDepression.isEnabled = false;
-        checkboxDepression.alpha = 0;
-        checkboxAgression.isEnabled = false;
-        checkboxAgression.alpha = 0;
-        
-        checkboxAnxiety.isEnabled = false;
-        checkboxAnxiety.alpha = 0;
-        checkboxMemoryLoss.isEnabled = false;
-        checkboxMemoryLoss.alpha = 0;
-        checkboxConfusion.isEnabled = false;
-        checkboxConfusion.alpha = 0;
         //Habits Agression
         labelForAgression.isEnabled = false;
         labelForAgression.alpha = 0;
@@ -284,41 +278,55 @@ class ViewController: UIViewController, FSCalendarDelegate {
         //Habits Mood Swings
         labelForMoodSwings.isEnabled = false;
         labelForMoodSwings.alpha = 0;
-        //Habits Wandering
-        labelForWandering.isEnabled = false;
-        labelForWandering.alpha = 0;
+//        //Habits Wandering
+//        labelForWandering.isEnabled = false;
+//        labelForWandering.alpha = 0;
         //Habits Suspicion
-        labelForSuspicion.isEnabled = false;
-        labelForSuspicion.alpha = 0;
-        //Habits Delusions
-        labelForDelusions.isEnabled = false;
-        labelForDelusions.alpha = 0;
+//        labelForSuspicion.isEnabled = false;
+//        labelForSuspicion.alpha = 0;
+//        //Habits Delusions
+//        labelForDelusions.isEnabled = false;
+//        labelForDelusions.alpha = 0;
+        
+        //Checkboxes
+        checkboxDepression.isEnabled = false;
+        checkboxDepression.alpha = 0;
+        checkboxAgression.isEnabled = false;
+        checkboxAgression.alpha = 0;
+        
+        checkboxAnxiety.isEnabled = false;
+        checkboxAnxiety.alpha = 0;
+        checkboxMemoryLoss.isEnabled = false;
+        checkboxMemoryLoss.alpha = 0;
+        checkboxConfusion.isEnabled = false;
+        checkboxConfusion.alpha = 0;
+        checkboxMoodSwings.isEnabled = false;
+        checkboxMoodSwings.alpha = 0;
         
     }
         
     @IBAction func checkboxDepression(_ sender: UIButton) {
-        print("u pressed me!")
-        checkboxDepression.setImage(UIImage(named: "checkmark.png"), for: UIControl.State.normal)
+        checkboxDepression.setBackgroundImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
     }
     
     @IBAction func checkboxAgression(_ sender: UIButton) {
-        print("U pressed me again!")
-        checkboxAgression.setImage(UIImage(named: "checkmark.png"), for: UIControl.State.normal)
+        checkboxAgression.setBackgroundImage(UIImage(systemName: "checkmark.circle.fill"), for: UIControl.State.normal)
     }
     
     @IBAction func checkboxAnxiety(_ sender: UIButton) {
-        print("U pressed anxiety")
-        checkboxAnxiety.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+        checkboxAnxiety.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
     }
     
     @IBAction func checkboxMemoryLoss(_ sender: UIButton) {
-        print("U pressed anxiety")
-        checkboxMemoryLoss.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+        checkboxMemoryLoss.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
     }
     
     @IBAction func checkboxConfusion(_ sender: UIButton) {
-        print("U pressed anxiety")
-        checkboxConfusion.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+        checkboxConfusion.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
+    }
+    
+    @IBAction func checkboxMoodSwings(_ sender: UIButton) {
+        checkboxMoodSwings.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
     }
         
 

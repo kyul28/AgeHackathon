@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lty-3a-2Kd">
-                                        <rect key="frame" x="20" y="20" width="415" height="594"/>
+                                        <rect key="frame" x="20" y="20" width="415" height="436"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-t6-XfZ">
@@ -236,75 +236,59 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wandering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAl-hn-Izz">
-                                                <rect key="frame" x="241" y="287" width="83" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suspicion/Distrust" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-rG-dg1">
-                                                <rect key="frame" x="219" y="326" width="139" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delusions/Hallucinations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmt-Rp-vsi">
-                                                <rect key="frame" x="219" y="258" width="186" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYE-nh-XDI">
-                                                <rect key="frame" x="127" y="71" width="42" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
-                                                <connections>
-                                                    <action selector="checkboxDepression:" destination="tXC-nK-Wch" eventType="touchUpInside" id="8GF-dq-BvJ"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-Np-b37">
-                                                <rect key="frame" x="173" y="118" width="42" height="31"/>
+                                                <rect key="frame" x="173" y="118" width="38" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="checkboxAgression:" destination="tXC-nK-Wch" eventType="touchUpInside" id="MhY-mr-mns"/>
-                                                    <action selector="checkboxAnxiety:" destination="tXC-nK-Wch" eventType="touchUpInside" id="O2g-RD-Bx8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXM-rF-YkW">
-                                                <rect key="frame" x="169" y="172" width="42" height="31"/>
+                                                <rect key="frame" x="163" y="167.5" width="38" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="checkboxAnxiety:" destination="tXC-nK-Wch" eventType="touchUpInside" id="Xdr-TA-dzk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTq-2u-7JB">
-                                                <rect key="frame" x="147" y="217" width="42" height="31"/>
+                                                <rect key="frame" x="147" y="217" width="36" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
                                                 <connections>
-                                                    <action selector="checkboxMemoryLoss:" destination="tXC-nK-Wch" eventType="touchUpInside" id="jLo-Ph-QUw"/>
+                                                    <action selector="checkboxMemoryLoss:" destination="tXC-nK-Wch" eventType="touchUpInside" id="M6X-72-UVR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwq-Vv-FAK">
-                                                <rect key="frame" x="121" y="271" width="42" height="31"/>
+                                                <rect key="frame" x="121" y="271" width="34" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="checkboxConfusion:" destination="tXC-nK-Wch" eventType="touchUpInside" id="FSf-OS-57M"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ap-jK-Ml2">
-                                                <rect key="frame" x="141" y="321" width="42" height="31"/>
+                                                <rect key="frame" x="141" y="321" width="36" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" backgroundImage="rectangle.fill" catalog="system"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="checkboxMoodSwings:" destination="tXC-nK-Wch" eventType="touchUpInside" id="0uj-JJ-ZQB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYE-nh-XDI">
+                                                <rect key="frame" x="122" y="71.5" width="33" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" backgroundImage="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="checkboxDepression:" destination="tXC-nK-Wch" eventType="touchUpInside" id="8GF-dq-BvJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="separatorColor"/>
@@ -320,11 +304,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="arrow.right" catalog="system"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, Samantha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeR-S9-mLI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeR-S9-mLI">
                                 <rect key="frame" x="144" y="61" width="127" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hi, Samantha">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9f-cR-O7T" customClass="FSCalendar">
@@ -349,14 +339,14 @@
                     <connections>
                         <outlet property="calendar" destination="q9f-cR-O7T" id="rSS-kK-pQj"/>
                         <outlet property="checkboxAgression" destination="hGR-Np-b37" id="8sM-EA-aII"/>
-                        <outlet property="checkboxAnxiety" destination="RXM-rF-YkW" id="vAy-gW-AS7"/>
+                        <outlet property="checkboxAnxiety" destination="RXM-rF-YkW" id="1eM-tw-EB8"/>
                         <outlet property="checkboxConfusion" destination="kwq-Vv-FAK" id="WfQ-3y-WMS"/>
                         <outlet property="checkboxDepression" destination="OYE-nh-XDI" id="5mL-jk-kJG"/>
                         <outlet property="checkboxMemoryLoss" destination="xTq-2u-7JB" id="aRu-U3-NeZ"/>
+                        <outlet property="checkboxMoodSwings" destination="4ap-jK-Ml2" id="Eal-3U-RjQ"/>
                         <outlet property="labelForAgression" destination="mxD-gJ-eJQ" id="Bdp-K0-sAo"/>
                         <outlet property="labelForAnxiety" destination="Bgp-vB-dpG" id="aKh-jd-gEH"/>
                         <outlet property="labelForConfusion" destination="ODu-u6-Ner" id="Wow-ii-PHN"/>
-                        <outlet property="labelForDelusions" destination="Tmt-Rp-vsi" id="qhN-dl-Mkz"/>
                         <outlet property="labelForDepression" destination="5FY-jx-m1w" id="cmB-jM-cC5"/>
                         <outlet property="labelForDietCalcium" destination="Oxa-KL-vsc" id="rUE-Ia-0ze"/>
                         <outlet property="labelForDietEnergy" destination="Ppi-7S-vvz" id="fD4-BF-20w"/>
@@ -371,8 +361,6 @@
                         <outlet property="labelForMoodSwings" destination="X2N-6O-gi1" id="e9j-4I-Fpj"/>
                         <outlet property="labelForSleepHours" destination="dVN-am-1cs" id="o7v-Cq-a7F"/>
                         <outlet property="labelForSleepQuality" destination="6MV-8w-DHL" id="LXT-NH-9tQ"/>
-                        <outlet property="labelForSuspicion" destination="0k0-rG-dg1" id="S9h-z0-ySO"/>
-                        <outlet property="labelForWandering" destination="VAl-hn-Izz" id="mNX-JT-OZK"/>
                         <outlet property="number" destination="SgL-aW-L5h" id="nGs-TO-b0p"/>
                         <outlet property="slider" destination="QhE-AZ-mqQ" id="sg2-dy-e8K"/>
                         <outlet property="textFieldDietCalcium" destination="WVe-yT-aqU" id="H4d-0R-aLa"/>
@@ -391,10 +379,10 @@
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="moon.zzz" catalog="system" width="121" height="128"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
-        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
