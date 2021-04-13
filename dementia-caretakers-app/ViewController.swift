@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, FSCalendarDelegate {
     
     @IBOutlet var calendar: FSCalendar!
+    @IBOutlet var scrollView: UIScrollView!
     
     //Outlets for Sleep Page
     @IBOutlet var number: UILabel!
@@ -66,6 +67,7 @@ class ViewController: UIViewController, FSCalendarDelegate {
         enableSleepPage();
         disableDietPage();
         disableHabitsPage();
+        scrollView.bounces = false
     }
     
     //Function for calendar, prints out the day of the week, date, month, year
