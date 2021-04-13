@@ -49,8 +49,13 @@ class ViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet var labelForSuspicion: UILabel!
     @IBOutlet var labelForDelusions: UILabel!
     //Habits Buttons
+    @IBOutlet var checkboxDepression: UIButton!
+    @IBOutlet var checkboxAgression: UIButton!
+    @IBOutlet var checkboxAnxiety: UIButton!
+    @IBOutlet var checkboxMemoryLoss: UIButton!
+    @IBOutlet var checkboxConfusion: UIButton!
 
-    
+
     //Loads ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -207,6 +212,18 @@ class ViewController: UIViewController, FSCalendarDelegate {
         //Habits Depression
         labelForDepression.isEnabled = true;
         labelForDepression.alpha = 1;
+        checkboxDepression.isEnabled = true;
+        checkboxDepression.alpha = 1;
+        checkboxAgression.isEnabled = true;
+        checkboxAgression.alpha = 1;
+        
+        checkboxAnxiety.isEnabled = true;
+        checkboxAnxiety.alpha = 1;
+        checkboxMemoryLoss.isEnabled = true;
+        checkboxMemoryLoss.alpha = 1;
+        checkboxConfusion.isEnabled = true;
+        checkboxConfusion.alpha = 1;
+        
         //Habits Agression
         labelForAgression.isEnabled = true;
         labelForAgression.alpha = 1;
@@ -241,6 +258,17 @@ class ViewController: UIViewController, FSCalendarDelegate {
         //Habits Depression
         labelForDepression.isEnabled = false;
         labelForDepression.alpha = 0;
+        checkboxDepression.isEnabled = false;
+        checkboxDepression.alpha = 0;
+        checkboxAgression.isEnabled = false;
+        checkboxAgression.alpha = 0;
+        
+        checkboxAnxiety.isEnabled = false;
+        checkboxAnxiety.alpha = 0;
+        checkboxMemoryLoss.isEnabled = false;
+        checkboxMemoryLoss.alpha = 0;
+        checkboxConfusion.isEnabled = false;
+        checkboxConfusion.alpha = 0;
         //Habits Agression
         labelForAgression.isEnabled = false;
         labelForAgression.alpha = 0;
@@ -267,8 +295,32 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForDelusions.alpha = 0;
         
     }
+        
+    @IBAction func checkboxDepression(_ sender: UIButton) {
+        print("u pressed me!")
+        checkboxDepression.setImage(UIImage(named: "checkmark.png"), for: UIControl.State.normal)
+    }
     
+    @IBAction func checkboxAgression(_ sender: UIButton) {
+        print("U pressed me again!")
+        checkboxAgression.setImage(UIImage(named: "checkmark.png"), for: UIControl.State.normal)
+    }
     
+    @IBAction func checkboxAnxiety(_ sender: UIButton) {
+        print("U pressed anxiety")
+        checkboxAnxiety.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+    }
+    
+    @IBAction func checkboxMemoryLoss(_ sender: UIButton) {
+        print("U pressed anxiety")
+        checkboxMemoryLoss.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+    }
+    
+    @IBAction func checkboxConfusion(_ sender: UIButton) {
+        print("U pressed anxiety")
+        checkboxConfusion.setImage(UIImage(named:"checkmark.png"), for: UIControl.State.normal)
+    }
+        
 
 
 }
