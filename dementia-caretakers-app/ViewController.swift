@@ -36,16 +36,33 @@ class ViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet var labelForDietCalcium: UILabel!
     @IBOutlet var textFieldDietCalcium: UITextField!
     @IBOutlet var labelForDietMg: UILabel!
+    
+    //Outlets for Habits
+    @IBOutlet var labelForHabitsTitle: UILabel!
+    @IBOutlet var labelForDepression: UILabel!
+    @IBOutlet var labelForAgression: UILabel!
+    @IBOutlet var labelForAnxiety: UILabel!
+    @IBOutlet var labelForMemoryLoss: UILabel!
+    @IBOutlet var labelForConfusion: UILabel!
+    @IBOutlet var labelForMoodSwings: UILabel!
+    @IBOutlet var labelForWandering: UILabel!
+    @IBOutlet var labelForSuspicion: UILabel!
+    @IBOutlet var labelForDelusions: UILabel!
+    //Habits Buttons
 
-
+    
+    //Loads ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         calendar.delegate = self
         calendar.scrollEnabled = true
         enableSleepPage();
         disableDietPage();
+        disableHabitsPage();
     }
     
+    //Function for calendar, prints out the day of the week, date, month, year
+    //Format: EEEE MM-dd-YYYY
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE MM-dd-YYYY"
@@ -54,32 +71,36 @@ class ViewController: UIViewController, FSCalendarDelegate {
     }
     
    
+    //Function for segmented Control
     @IBAction func menuDidChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
         case 0:
             enableSleepPage();
             disableDietPage();
+            disableHabitsPage()
         case 1:
             disableSleepPage();
+            disableHabitsPage();
             enableDietPage();
-            print("enabled diet page");
         case 2:
             disableSleepPage();
             disableDietPage();
+            enableHabitsPage();
         default:
             disableDietPage();
             enableSleepPage();
+            enableHabitsPage();
         }
-        
     }
     
+    //Returns value from slider
     @IBAction func sliderDidSlide(_ sender: UISlider) {
         let value = sender.value
         number.text = "\(value)"
     }
     
+    //Enables the Sleep page
     func enableSleepPage() {
-//        slider.accessibilityActivate()
         slider.isEnabled = true;
         slider.alpha = 1;
         number.isEnabled = true;
@@ -92,6 +113,7 @@ class ViewController: UIViewController, FSCalendarDelegate {
         textFieldSleepHours.alpha = 1;
     }
     
+    //Disables the Sleep page
     func disableSleepPage(){
         slider.isEnabled = false;
         slider.alpha = 0;
@@ -105,6 +127,7 @@ class ViewController: UIViewController, FSCalendarDelegate {
         textFieldSleepHours.alpha = 0;
     }
     
+    //Enables the Diet Page
     func enableDietPage() {
         //Additional Notes
         textViewDietNotes.isScrollEnabled = true;
@@ -138,10 +161,9 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForDietMg.alpha = 1;
         textFieldDietCalcium.isEnabled = true;
         textFieldDietCalcium.alpha = 1;
-
-
     }
     
+    //Disables the Diet page
     func disableDietPage() {
         //Additional Notes
         textViewDietNotes.alpha = 0;
@@ -175,13 +197,78 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForDietMg.alpha = 0;
         textFieldDietCalcium.isEnabled = false;
         textFieldDietCalcium.alpha = 0;
-
-
-
-
+    }
+    
+    //Enables the Habits Page
+    func enableHabitsPage() {
+        //Habits Title
+        labelForHabitsTitle.isEnabled = true;
+        labelForHabitsTitle.alpha = 1;
+        //Habits Depression
+        labelForDepression.isEnabled = true;
+        labelForDepression.alpha = 1;
+        //Habits Agression
+        labelForAgression.isEnabled = true;
+        labelForAgression.alpha = 1;
+        //Habits Anxiety
+        labelForAnxiety.isEnabled = true;
+        labelForAnxiety.alpha = 1;
+        //Habits Memory Loss
+        labelForMemoryLoss.isEnabled = true;
+        labelForMemoryLoss.alpha = 1;
+        //Habits Confusion
+        labelForConfusion.isEnabled = true;
+        labelForConfusion.alpha = 1;
+        //Habits Mood Swings
+        labelForMoodSwings.isEnabled = true;
+        labelForMoodSwings.alpha = 1;
+        //Habits Wandering
+        labelForWandering.isEnabled = true;
+        labelForWandering.alpha = 1;
+        //Habits Suspicion
+        labelForSuspicion.isEnabled = true;
+        labelForSuspicion.alpha = 1;
+        //Habits Delusions
+        labelForDelusions.isEnabled = true;
+        labelForDelusions.alpha = 1;
+    }
+    
+    //Disables the Habits Page
+    func disableHabitsPage() {
+        //Habits Title
+        labelForHabitsTitle.isEnabled = false;
+        labelForHabitsTitle.alpha = 0;
+        //Habits Depression
+        labelForDepression.isEnabled = false;
+        labelForDepression.alpha = 0;
+        //Habits Agression
+        labelForAgression.isEnabled = false;
+        labelForAgression.alpha = 0;
+        //Habits Anxiety
+        labelForAnxiety.isEnabled = false;
+        labelForAnxiety.alpha = 0;
+        //Habits Memory Loss
+        labelForMemoryLoss.isEnabled = false;
+        labelForMemoryLoss.alpha = 0;
+        //Habits Confusion
+        labelForConfusion.isEnabled = false;
+        labelForConfusion.alpha = 0;
+        //Habits Mood Swings
+        labelForMoodSwings.isEnabled = false;
+        labelForMoodSwings.alpha = 0;
+        //Habits Wandering
+        labelForWandering.isEnabled = false;
+        labelForWandering.alpha = 0;
+        //Habits Suspicion
+        labelForSuspicion.isEnabled = false;
+        labelForSuspicion.alpha = 0;
+        //Habits Delusions
+        labelForDelusions.isEnabled = false;
+        labelForDelusions.alpha = 0;
+        
     }
     
     
-    
+
 
 }
