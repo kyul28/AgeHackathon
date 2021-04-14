@@ -34,39 +34,6 @@ struct SleepView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
-                HStack {
-                    Button(action: {
-                        self.showDetails.toggle()
-                    }, label: {
-                        Text("< Main")
-                    })
-                    .padding(.leading)
-                    Spacer()
-                    switch pickerDateRange{
-                    case 0:
-                        DatePicker("Please select a  date", selection: $miniCalendar,in: ...Date(),
-                                   displayedComponents:.date)
-                            .labelsHidden()
-                    case 1:
-                            Text("Feb 28 ~ Mar 6, 2021")
-                                .foregroundColor(Color(#colorLiteral(red: 0.04616101086, green: 0.4948464036, blue: 0.9979333282, alpha: 1)))
-                                .padding(.all, 7.0)
-                                .background(Color(#colorLiteral(red: 0.9371757507, green: 0.9372573495, blue: 0.9414530396, alpha: 1)))
-                                .cornerRadius(5)
-                    case 2:
-                            Text("March 2021")
-                                .foregroundColor(Color(#colorLiteral(red: 0.04616101086, green: 0.4948464036, blue: 0.9979333282, alpha: 1)))
-                                .padding(.all, 7.0)
-                                .background(Color(#colorLiteral(red: 0.9371757507, green: 0.9372573495, blue: 0.9414530396, alpha: 1)))
-                                .cornerRadius(5)
-                    default:
-                        DatePicker("Please select a  date", selection: $miniCalendar,in: ...Date(),
-                                   displayedComponents:.date)
-                            .labelsHidden()
-                    }
-                }.padding(.top,150)
-                .padding(.trailing)
-//                .edgesIgnoringSafeArea(.all)
                 Spacer()
                 Text("Sleep")
                     .font(.system(size: 34))
@@ -94,7 +61,7 @@ struct SleepView: View {
                     SGraphView1(steps: steps0)
                         .padding(.bottom, 250)
                 }
-            }
+            }.padding(.top, 130)
         }
     }
 }

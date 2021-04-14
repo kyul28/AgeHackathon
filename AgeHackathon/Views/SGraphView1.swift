@@ -47,18 +47,27 @@ struct SGraphView1: View {
                     VStack {
                         Text("\(step.hours, specifier: "%.1f")")
                             .font(.caption)
-                        Rectangle()
-                            .fill(step.hours > 7.5 ?
-                                    Color.green :Color.red)
-                            .frame(width: 20, height: CGFloat(yValue))
-                        Text("\(step.date)")
-                            .font(.caption)
+                        if (step.hours == 10) {
+                            Rectangle()
+                                .fill(step.hours > 7.5 ?
+                                        Color.green :Color.red)
+                                .frame(width: 20, height: 180)
+                            Text("\(step.date)")
+                                .font(.caption)
+                        } else {
+                            Rectangle()
+                                .fill(step.hours > 7.5 ?
+                                        Color.green :Color.red)
+                                .frame(width: 20, height: CGFloat(yValue))
+                            Text("\(step.date)")
+                                .font(.caption)
+                        }
                     }
                 }
             }
             Text("Avg Hours: \(totalSteps, specifier: "%.1f")").padding(.top, 50)
                 .opacity(0.5)
-                .padding(.bottom, 90)
+                .padding(.bottom, 80)
         }.frame(maxWidth: .infinity, maxHeight: 540)
         .background(Color(#colorLiteral(red: 0.9371757507, green: 0.9372573495, blue: 0.9414530396, alpha: 1)))
         .cornerRadius(10)

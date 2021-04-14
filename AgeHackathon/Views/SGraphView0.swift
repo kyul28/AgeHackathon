@@ -43,22 +43,30 @@ struct SGraphView0: View {
                 .padding(.trailing,250)
             HStack(alignment: .lastTextBaseline) {
                 ForEach(steps, id: \.id) { step in
-                    let yValue = Swift.min(step.hours*17, 300)
                     VStack {
                         Text("\(step.hours, specifier: "%.1f")")
                             .font(.caption)
-                        Rectangle()
-                            .fill(step.hours == 7.5 ?
-                                    Color.green :Color.red)
-                            .frame(width: 20, height: CGFloat(yValue))
-                        Text("\(step.date)")
-                            .font(.caption)
+                        if (step.hours == 7.5) {
+                            Rectangle()
+                                .fill(step.hours == 7.5 ?
+                                        Color.green :Color.red)
+                                .frame(width: 20, height: 180)
+                            Text("\(step.date)")
+                                .font(.caption)
+                        } else {
+                            Rectangle()
+                                .fill(step.hours == 7.5 ?
+                                        Color.green :Color.red)
+                                .frame(width: 20, height: 140)
+                            Text("\(step.date)")
+                                .font(.caption)
+                        }
                     }
                 }
             }
             Text("Hours deficient: \(steps[1].hours - steps[0].hours, specifier: "%.1f")").padding(.top, 50)
                 .opacity(0.5)
-                .padding(.bottom, 90)
+                .padding(.bottom, 80)
         }.frame(maxWidth: .infinity, maxHeight: 540)
         .background(Color(#colorLiteral(red: 0.9371757507, green: 0.9372573495, blue: 0.9414530396, alpha: 1)))
         .cornerRadius(10)

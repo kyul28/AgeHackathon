@@ -1,5 +1,5 @@
 //
-//  DietView.swift
+//  NoResultView.swift
 //  AgeHackathon
 //
 //  Created by kyuhee lee on 2021-04-12.
@@ -11,7 +11,7 @@ import SwiftUI
 //    @Published var type = 0
 //}
 
-struct DietView: View {
+struct NoResultView: View {
     @State private var miniCalendar = Date()
     @State var pickerDateRange = 0
 //    @StateObject var pickerDateRange = PickDate()
@@ -52,27 +52,20 @@ struct DietView: View {
                 }.pickerStyle(SegmentedPickerStyle())
                     .padding(.horizontal, 24)
                     .padding(.bottom, 20)
-                switch pickerDateRange{
-                case 0:
-                    DGraphView0(diets: diets0)
-                        .padding(.bottom, 250)
-                case 1:
-                    DGraphView1(diets: diets1)
-                        .padding(.bottom, 250)
-                case 2:
-                    DGraphView2(diets: diets2)
-                        .padding(.bottom, 250)
-                default:
-                    DGraphView0(diets: diets0)
-                        .padding(.bottom, 250)
-                }
+                Text("No Data Provided")
+                    .frame(minWidth: 400, minHeight: 500)
+                    .background(Color(#colorLiteral(red: 0.9371757507, green: 0.9372573495, blue: 0.9414530396, alpha: 1)))
+                    .cornerRadius(10)
+                    .padding(10)
+                    .opacity(0.5)
             }.padding(.top,100)
+            .padding(.bottom, 250)
         }
     }
 }
 
-struct DietView_Previews: PreviewProvider {
+struct NoResultView_Previews: PreviewProvider {
     static var previews: some View {
-        DietView()
+        NoResultView()
     }
 }
