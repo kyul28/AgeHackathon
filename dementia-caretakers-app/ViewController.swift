@@ -13,11 +13,14 @@ class ViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet var scrollView: UIScrollView!
     
     //Outlets for Sleep Page
+    @IBOutlet var patientSleepTitle: UILabel!
     @IBOutlet var number: UILabel!
     @IBOutlet var labelForSleepQuality: UILabel!
     @IBOutlet var slider: UISlider!
     @IBOutlet var labelForSleepHours: UILabel!
     @IBOutlet var textFieldSleepHours: UITextField!
+    @IBOutlet var labelForSundowning: UILabel!
+    @IBOutlet var checkForSoundowning: UIButton!
     
     // Outlets for Diet Page
     @IBOutlet var textViewDietNotes: UITextView!
@@ -56,7 +59,6 @@ class ViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet var checkboxMemoryLoss: UIButton!
     @IBOutlet var checkboxConfusion: UIButton!
     @IBOutlet var checkboxMoodSwings: UIButton!
-
 
 
     //Loads ViewController
@@ -99,17 +101,22 @@ class ViewController: UIViewController, FSCalendarDelegate {
             disableDietPage();
             enableSleepPage();
             enableHabitsPage();
+            let float: Float = 3.42
+            _ = round(float)
         }
     }
     
     //Returns value from slider
     @IBAction func sliderDidSlide(_ sender: UISlider) {
         let value = sender.value
-        number.text = "\(value)"
+        let roundedValue = round(value)
+        number.text = "\(roundedValue)"
     }
     
     //Enables the Sleep page
     func enableSleepPage() {
+        patientSleepTitle.isEnabled = true;
+        patientSleepTitle.alpha = 1;
         slider.isEnabled = true;
         slider.alpha = 1;
         number.isEnabled = true;
@@ -120,10 +127,16 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForSleepHours.alpha = 1;
         textFieldSleepHours.isEnabled = true;
         textFieldSleepHours.alpha = 1;
+        checkForSoundowning.isEnabled = true;
+        checkForSoundowning.alpha = 1;
+        labelForSundowning.isEnabled = true;
+        labelForSundowning.alpha = 1;
     }
     
     //Disables the Sleep page
     func disableSleepPage(){
+        patientSleepTitle.isEnabled = false;
+        patientSleepTitle.alpha = 0;
         slider.isEnabled = false;
         slider.alpha = 0;
         number.isEnabled = false;
@@ -134,6 +147,10 @@ class ViewController: UIViewController, FSCalendarDelegate {
         labelForSleepHours.alpha = 0;
         textFieldSleepHours.isEnabled = false;
         textFieldSleepHours.alpha = 0;
+        checkForSoundowning.isEnabled = false;
+        checkForSoundowning.alpha = 0;
+        labelForSundowning.isEnabled = false;
+        labelForSundowning.alpha = 0;
     }
     
     //Enables the Diet Page
@@ -329,6 +346,10 @@ class ViewController: UIViewController, FSCalendarDelegate {
     
     @IBAction func checkboxMoodSwings(_ sender: UIButton) {
         checkboxMoodSwings.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
+    }
+    
+    @IBAction func checkboxSundowning(_ sender: UIButton) {
+        checkForSoundowning.setBackgroundImage(UIImage(systemName:"checkmark.circle.fill"), for: UIControl.State.normal)
     }
         
 
